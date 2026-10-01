@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUMENTAR DATOS A UN VECTOR</title>
+    <link rel="stylesheet" href="../CSS/estilo.css">
+</head>
+<body>
+    <!-- ================================
+    BANNER
+    ================================= -->
+    <div class="banner">
+        <video autoplay muted loop playsinline class="video-banner">
+            <source src="../img/banner.mp4" type="video/mp4">
+        </video>
+        <div class="banner-texto">
+            <h1>Mi Proyecto HTML y CSS</h1>
+            <p>
+                Componentes Web - Joel Ariel Gutierrez Vargas
+            </p>
+        </div>
+    </div>
+    <!-- ================================
+        MENU
+    ================================= -->
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="../index.html" class="inicio">
+                    INICIO
+                </a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="matematicas">
+                    MATEMATICAS
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="../MATEMATICAS/factorial.html">
+                            FACTORIAL
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../MATEMATICAS/fibonacci.html">
+                            SERIE FIBONACCI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../MATEMATICAS/primos.html">
+                            NUMEROS PRIMOS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../MATEMATICAS/ecuacion.html">
+                            ECUACION 2do GRADO
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../MATEMATICAS/perfecto.html">
+                            NUMERO PERFECTO
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="cadenas">
+                    CADENAS
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="../CADENAS/palindromo.html">
+                            PALINDROMO
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../CADENAS/mosca.html">
+                            MOSCA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../CADENAS/busca-reemplaza.html">
+                            BUSCA Y REEMPLAZA PALABRA
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="fecha-hora">
+                    FECHA Y HORA
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="../FECHA_HORA/fecha-actual.html">
+                            FECHA ACTUAL
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../FECHA_HORA/reloj.html">
+                            RELOJ AUTOMATICO
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../FECHA_HORA/milisegundos.html">
+                            CONTAR MILISEGUNDOS
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="arrays">
+                    ARRAYS
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="../ARRAYS/aumentar-vector.html">
+                            AUMENTAR DATOS A UN VECTOR
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../ARRAYS/girar-vector.html">
+                            GIRAR IZQUIERDA O DERECHA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../ARRAYS/mayus-minus.html">
+                            MAYUSCULAS Y MINUSCULAS
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- ================================
+        TITULO
+    ================================= -->
+    <section class="titulo-pagina">
+        <h1>
+            AUMENTAR DATOS A UN VECTOR
+        </h1>
+        <p>
+            Adicionar elementos a un vector
+        </p>
+    </section>
+    <!-- ================================
+        FORMULARIO VECTOR
+    ================================= -->
+    <div class="formulario formulario-vector">
+        <h2>
+            VECTOR DINAMICO
+        </h2>
+        <div class="vector-contenido">
+            <div class="vector-visual">
+                <div class="vector-icono">
+                    []
+                </div>
+                <h3>
+                    ARRAY
+                </h3>
+                <p>
+                    Agrega elementos uno por uno
+                    y observa como aumenta el vector.
+                </p>
+                <div class="vector-linea"></div>
+                <span>
+                    DATOS ALMACENADOS
+                </span>
+            </div>
+            <!-- DATOS -->
+            <div class="datos-vector">
+                <label for="n">
+                    Adicione un elemento al vector:
+                </label>
+                <input type="text" id="n" placeholder="Ingrese un dato">
+                <button type="button" onclick="generar()">
+                    + ADICIONAR ELEMENTO
+                </button>
+                <button type="button" onclick="vaciar()">
+                    VACIAR VECTOR
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- ================================
+        RESULTADO
+    ================================= -->
+    <div class="resultado resultado-vector">
+        <h3>
+            VECTOR:
+        </h3>
+        <div id="res"></div>
+    </div>
+    <!-- ================================
+        FOOTER
+    ================================= -->
+    <footer>
+        <div class="footer-principal">
+            <div class="footer-descripcion">
+                <h2>Mi Proyecto HTML y CSS</h2>
+                <p>
+                    Proyecto academico desarrollado con HTML5,
+                    CSS3 y JavaScript, donde se presentan diferentes
+                    ejercicios de programacion y componentes web.
+                </p>
+                <div class="footer-linea"></div>
+                <span>Joel Ariel Gutierrez Vargas</span>
+            </div>
+            <div class="footer-seccion">
+                <h4>EJERCICIOS</h4>
+                <p>Matematicas</p>
+                <p>Cadenas</p>
+                <p>Fecha y Hora</p>
+                <p>Arrays</p>
+            </div>
+            <div class="footer-seccion">
+                <h4>TECNOLOGIAS</h4>
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>JavaScript</p>
+                <p>Diseño Web</p>
+            </div>
+            <div class="footer-seccion">
+                <h4>CONTACTO</h4>
+                <p>Telefono</p>
+                <span>+591 64126647</span>
+                <p>Correo</p>
+                <span>joelarielgutierrez@gmail.com</span>
+                <p>Redes</p>
+                <span>Facebook | Instagram</span>
+            </div>
+        </div>
+        <div class="footer-inferior">
+            <p>
+                © 2026 Joel Gutierrez
+            </p>
+            <p>
+                Proyecto de Desarrollo Web
+            </p>
+        </div>
+    </footer>
+    <!-- ================================
+        JAVASCRIPT
+    ================================= -->
+    <script>
+        let frutas =
+            JSON.parse(localStorage.getItem("frutas")) || [];
+        function mostrar() {
+            resultado = "";
+            for (i = 0; i < frutas.length; i++) {
+                resultado +=
+                    "<span>" +
+                    frutas[i] +
+                    "</span>";
+            }
+            document.getElementById("res").innerHTML =
+                resultado;
+        }
+        function generar() {
+            n =
+                document.getElementById("n").value;
+            if (n != "") {
+                frutas.push(n);
+                localStorage.setItem(
+                    "frutas",
+                    JSON.stringify(frutas)
+                );
+                document.getElementById("n").value = "";
+                mostrar();
+            }
+        }
+        function vaciar() {
+            frutas = [];
+            localStorage.setItem(
+                "frutas",
+                JSON.stringify(frutas)
+            );
+            mostrar();
+        }
+        mostrar();
+    </script>
+</body>
+</html>

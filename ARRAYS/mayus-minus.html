@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAYUSCULAS Y MINUSCULAS</title>
+    <link rel="stylesheet" href="../CSS/estilo.css">
+</head>
+<body>
+    <div class="banner">
+        <video autoplay muted loop playsinline class="video-banner">
+            <source src="../img/banner.mp4" type="video/mp4">
+        </video>
+        <div class="banner-texto">
+            <h1>Mi Proyecto HTML y CSS</h1>
+            <p>Componentes Web - Joel Ariel Gutierrez Vargas</p>
+        </div>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="../index.html" class="inicio">INICIO</a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="matematicas">MATEMATICAS</a>
+                <ul class="submenu">
+                    <li><a href="../MATEMATICAS/factorial.html">FACTORIAL</a></li>
+                    <li><a href="../MATEMATICAS/fibonacci.html">SERIE FIBONACCI</a></li>
+                    <li><a href="../MATEMATICAS/primos.html">NUMEROS PRIMOS</a></li>
+                    <li><a href="../MATEMATICAS/ecuacion.html">ECUACION 2do GRADO</a></li>
+                    <li><a href="../MATEMATICAS/perfecto.html">NUMERO PERFECTO</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="cadenas">CADENAS</a>
+                <ul class="submenu">
+                    <li><a href="../CADENAS/palindromo.html">PALINDROMO</a></li>
+                    <li><a href="../CADENAS/mosca.html">MOSCA</a></li>
+                    <li><a href="../CADENAS/busca-reemplaza.html">BUSCA Y REEMPLAZA PALABRA</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="fecha-hora">FECHA Y HORA</a>
+                <ul class="submenu">
+                    <li><a href="../FECHA_HORA/fecha-actual.html">FECHA ACTUAL</a></li>
+                    <li><a href="../FECHA_HORA/reloj.html">RELOJ AUTOMATICO</a></li>
+                    <li><a href="../FECHA_HORA/milisegundos.html">CONTAR MILISEGUNDOS</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="arrays">ARRAYS</a>
+                <ul class="submenu">
+                    <li><a href="../ARRAYS/aumentar-vector.html">AUMENTAR DATOS A UN VECTOR</a></li>
+                    <li><a href="../ARRAYS/girar-vector.html">GIRAR IZQUIERDA O DERECHA</a></li>
+                    <li><a href="../ARRAYS/mayus-minus.html">MAYUSCULAS Y MINUSCULAS</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <section class="titulo-pagina">
+        <h1>MAYUSCULAS Y MINUSCULAS</h1>
+        <p>Transformar los elementos del vector a mayusculas y minusculas</p>
+    </section>
+    <div class="formulario formulario-mayus-minus">
+        <h2>TRANSFORMAR VECTOR</h2>
+        <div class="mayus-minus-contenido">
+            <div class="mayus-minus-visual">
+                <div class="mayus-minus-icono">Aa</div>
+                <h3>TRANSFORMACION</h3>
+                <p>
+                    Los elementos del vector se transforman
+                    dependiendo de su posicion.
+                </p>
+                <div class="tipos-letras">
+                    <span>ABC</span>
+                    <span>abc</span>
+                </div>
+                <div class="mayus-minus-linea"></div>
+                <span>MAYUSCULAS Y MINUSCULAS</span>
+            </div>
+            <div class="datos-mayus-minus">
+                <h3>REGLA DE TRANSFORMACION</h3>
+                <div class="regla-letras">
+                    <div>
+                        <strong>POSICION PAR</strong>
+                        <span>MAYUSCULAS</span>
+                    </div>
+                    <div>
+                        <strong>POSICION IMPAR</strong>
+                        <span>MINUSCULAS</span>
+                    </div>
+                </div>
+                <button type="button" class="btn-transformar" onclick="transformar()">
+                    TRANSFORMAR VECTOR
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="resultado resultado-mayus-minus">
+        <h3>VECTOR ORIGINAL:</h3>
+        <div id="original"></div>
+        <div class="separador-transformacion">
+            <span>↓</span>
+            <p>TRANSFORMACION</p>
+        </div>
+        <h3>RESULTADO:</h3>
+        <div id="res"></div>
+    </div>
+    <footer>
+        <div class="footer-principal">
+
+            <div class="footer-descripcion">
+
+                <h2>Mi Proyecto HTML y CSS</h2>
+
+                <p>
+                    Proyecto academico desarrollado con HTML5,
+                    CSS3 y JavaScript, donde se presentan diferentes
+                    ejercicios de programacion y componentes web.
+                </p>
+
+                <div class="footer-linea"></div>
+
+                <span>Joel Ariel Gutierrez Vargas</span>
+
+            </div>
+
+
+            <div class="footer-seccion">
+
+                <h4>EJERCICIOS</h4>
+
+                <p>Matematicas</p>
+                <p>Cadenas</p>
+                <p>Fecha y Hora</p>
+                <p>Arrays</p>
+
+            </div>
+
+
+            <div class="footer-seccion">
+
+                <h4>TECNOLOGIAS</h4>
+
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>JavaScript</p>
+                <p>Diseño Web</p>
+
+            </div>
+
+
+            <div class="footer-seccion">
+
+                <h4>CONTACTO</h4>
+
+                <p>Telefono</p>
+                <span>+591 64126647</span>
+
+                <p>Correo</p>
+                <span>joelarielgutierrez@gmail.com</span>
+
+                <p>Redes</p>
+                <span>Facebook | Instagram</span>
+
+            </div>
+
+        </div>
+        <div class="footer-inferior">
+            <p>
+                © 2026 Joel Gutierrez
+            </p>
+            <p>
+                Proyecto de Desarrollo Web
+            </p>
+        </div>
+    </footer>
+    <script>
+        let frutas = JSON.parse(localStorage.getItem("frutas")) || [];
+        function mostrar() {
+            resultado = "";
+            for (i = 0; i < frutas.length; i++) {
+                resultado +=
+                    "<span>" +
+                    frutas[i] +
+                    "</span>";
+            }
+            document.getElementById("original").innerHTML =
+                resultado;
+        }
+        function transformar() {
+            let resultado = [];
+            for (i = 0; i < frutas.length; i++) {
+                if (i % 2 == 0) {
+                    resultado.push(frutas[i].toUpperCase());
+                } else {
+                    resultado.push(frutas[i].toLowerCase());
+                }
+            }
+            mostrarResultado(resultado);
+        }
+        function mostrarResultado(resultado) {
+            salida = "";
+            for (i = 0; i < resultado.length; i++) {
+                salida +=
+                    "<span>" +
+                    resultado[i] +
+                    "</span>";
+            }
+            document.getElementById("res").innerHTML =
+                salida;
+        }
+        mostrar();
+    </script>
+</body>
+</html>

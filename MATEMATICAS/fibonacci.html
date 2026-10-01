@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERIE FIBONACCI</title>
+    <link rel="stylesheet" href="../CSS/estilo.css">
+</head>
+<body>
+    <div class="banner">
+        <video autoplay muted loop playsinline class="video-banner">
+            <source src="../img/banner.mp4" type="video/mp4">
+        </video>
+        <div class="banner-texto">
+            <h1>Mi Proyecto HTML y CSS</h1>
+            <p>Componentes Web - Joel Ariel Gutierrez Vargas</p>
+        </div>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="../index.html" class="inicio">INICIO</a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="matematicas">MATEMATICAS</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="../MATEMATICAS/factorial.html">FACTORIAL</a>
+                    </li>
+                    <li>
+                        <a href="../MATEMATICAS/fibonacci.html">SERIE FIBONACCI</a>
+                    </li>
+                    <li>
+                        <a href="../MATEMATICAS/primos.html">NUMEROS PRIMOS</a>
+                    </li>
+                    <li>
+                        <a href="../MATEMATICAS/ecuacion.html">ECUACION 2do GRADO</a>
+                    </li>
+                    <li>
+                        <a href="../MATEMATICAS/perfecto.html">NUMERO PERFECTO</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="cadenas">CADENAS</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="../CADENAS/palindromo.html">PALINDROMO</a>
+                    </li>
+                    <li>
+                        <a href="../CADENAS/mosca.html">MOSCA</a>
+                    </li>
+                    <li>
+                        <a href="../CADENAS/busca-reemplaza.html">
+                            BUSCA Y REEMPLAZA PALABRA
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="fecha-hora">FECHA Y HORA</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="../FECHA_HORA/fecha-actual.html">
+                            FECHA ACTUAL
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../FECHA_HORA/reloj.html">
+                            RELOJ AUTOMATICO
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../FECHA_HORA/milisegundos.html">
+                            CONTAR MILISEGUNDOS
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="arrays">ARRAYS</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="../ARRAYS/aumentar-vector.html">
+                            AUMENTAR DATOS A UN VECTOR
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../ARRAYS/girar-vector.html">
+                            GIRAR IZQUIERDA O DERECHA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../ARRAYS/mayus-minus.html">
+                            MAYUSCULAS Y MINUSCULAS
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <section class="titulo-pagina">
+        <h1>SERIE FIBONACCI</h1>
+        <p>Generar una cantidad determinada de numeros Fibonacci</p>
+    </section>
+    <div class="formulario formulario-fibonacci">
+        <h2>GENERAR SERIE</h2>
+        <div class="fibonacci-contenido">
+            <div class="fibonacci-visual">
+                <img src="../img/fibonacci.jpg" alt="Formula Fibonacci">
+                <div class="fibonacci-serie">
+                    <span>0</span>
+                    <strong>→</strong>
+                    <span>1</span>
+                    <strong>→</strong>
+                    <span>1</span>
+                    <strong>→</strong>
+                    <span>2</span>
+                    <strong>→</strong>
+                    <span>3</span>
+                </div>
+                <div class="fibonacci-linea"></div>
+                <p>
+                    Cada numero de la serie se obtiene
+                    sumando los dos numeros anteriores.
+                </p>
+            </div>
+            <div class="datos-fibonacci">
+                <div class="fibonacci-icono">
+                    F
+                </div>
+                <h3>CANTIDAD DE NUMEROS</h3>
+                <label for="n">
+                    Ingrese la cantidad:
+                </label>
+                <input type="number" id="n" min="1" placeholder="Ejemplo: 8">
+                <button type="button" onclick="calcular()">
+                    MOSTRAR SERIE
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="resultado resultado-fibonacci">
+        <h3>RESULTADO:</h3>
+        <div id="res">
+            Ingrese una cantidad para generar la serie.
+        </div>
+    </div>
+    <footer>
+        <div class="footer-principal">
+            <div class="footer-descripcion">
+                <h2>Mi Proyecto HTML y CSS</h2>
+                <p>
+                    Proyecto academico desarrollado con HTML5,
+                    CSS3 y JavaScript, donde se presentan diferentes
+                    ejercicios de programacion y componentes web.
+                </p>
+                <div class="footer-linea"></div>
+                <span>Joel Ariel Gutierrez Vargas</span>
+            </div>
+            <div class="footer-seccion">
+                <h4>EJERCICIOS</h4>
+                <p>Matematicas</p>
+                <p>Cadenas</p>
+                <p>Fecha y Hora</p>
+                <p>Arrays</p>
+            </div>
+            <div class="footer-seccion">
+                <h4>TECNOLOGIAS</h4>
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>JavaScript</p>
+                <p>Diseño Web</p>
+            </div>
+            <div class="footer-seccion">
+                <h4>CONTACTO</h4>
+                <p>Telefono</p>
+                <span>+591 64126647</span>
+                <p>Correo</p>
+                <span>joelarielgutierrez@gmail.com</span>
+                <p>Redes</p>
+                <span>Facebook | Instagram</span>
+            </div>
+        </div>
+        <div class="footer-inferior">
+            <p>
+                © 2026 Joel Gutierrez
+            </p>
+            <p>
+                Proyecto de Desarrollo Web
+            </p>
+        </div>
+    </footer>
+    <script>
+        function calcular() {
+            n = parseInt(document.getElementById("n").value);
+            res = "";
+            if (isNaN(n) || n <= 0) {
+                res = "Ingrese una cantidad mayor a 0.";
+            } else {
+                a = 0;
+                b = 1;
+                for (i = 1; i <= n; i++) {
+                    res +=
+                        "<span>" +
+                        a +
+                        "</span>";
+                    c = a + b;
+                    a = b;
+                    b = c;
+                }
+            }
+            document.getElementById("res").innerHTML = res;
+        }
+    </script>
+</body>
+</html>
